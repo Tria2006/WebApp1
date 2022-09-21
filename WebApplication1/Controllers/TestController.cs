@@ -10,7 +10,7 @@ namespace WebApplication1.Controllers
         [HttpGet]
         public int GetNumber()
         {
-            return 6;
+            return 9;
         }
 
         [HttpPost]
