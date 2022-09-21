@@ -5,3 +5,7 @@
 /.vs
 /WebApplication1/bin/Debug/net5.0
 /WebApplication1/obj
+/AngularTest/anular-test/.vscode
+/AngularTest/bin/Debug/net5.0
+/AngularTest/obj
+/AngularTest/anular-test/.vscode
