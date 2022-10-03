@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  public message = '';
+
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
@@ -18,8 +20,9 @@ export class HomeComponent implements OnInit {
     //   var a = 0;
     // })
 
-    this.http.post<any>('https://localhost:44374/Test/TestNumber', {}).subscribe(res => {
-      var a = 0;
+    this.http.post<any>('https://localhost:44374/Test/TestNumber', {num1: 123, str1: 'dsgsngsbkjgqrsabj'}).subscribe(res => {
+      this.message = res.message;
+      
     })
 
   }
