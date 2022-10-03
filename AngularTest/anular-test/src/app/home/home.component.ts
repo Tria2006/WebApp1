@@ -14,8 +14,13 @@ export class HomeComponent implements OnInit {
   }
 
   onClick() {
-    this.http.get<any>('https://localhost:44374/Test/GetNumber').subscribe(res => {
+    // this.http.get<any>('https://localhost:44374/Test/GetNumber').subscribe(res => {
+    //   var a = 0;
+    // })
+
+    this.http.post<any>('https://localhost:44374/Test/TestNumber', {}).subscribe(res => {
       var a = 0;
     })
+
   }
 }
